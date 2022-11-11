@@ -59,11 +59,11 @@ Step 5: Assign the counter_up & _down.
 Step 6: End the module
 
 ## PROGRAM 
-``
+```
 Program for flipflops  and verify its truth table in quartus using Verilog programming.
 Developed by: Dharshini DS
 RegisterNumber: 212221230022
-``
+```
 ### COUNTER DOWN:
 ```
 module ex(input clk,input reset,output[0:3]counter);
