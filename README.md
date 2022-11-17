@@ -91,22 +91,22 @@ downcounter=downcounter+1;
 end endmodule
 ```
 ### RTL LOGIC UP COUNTER:  
-![d1](https://user-images.githubusercontent.com/93427345/202351923-6197eaef-93ef-418d-82ae-77979ed78fd8.png)
+![d1](./d1.png)
 
 ### TIMING DIGRAMS FOR UP COUNTER  
-![d2](https://user-images.githubusercontent.com/93427345/202351933-5b8cb640-366e-40d5-9c81-27ebe6f2a41c.png)
+![d2](./d2.png)
 
 ### TRUTH TABLE FOR UP COUNTER
-![d3](https://user-images.githubusercontent.com/93427345/202352072-c86614a2-a782-46de-ad57-df4646d8564b.png)
+![d3](./d3.png)
 
 ### RTL LOGIC DOWN COUNTER
-![d4](https://user-images.githubusercontent.com/93427345/202352183-9c15daf3-c881-4dcc-baf5-a0e0ea18880a.png)
+![d4](./d4.png)
 
 ### TIMING DIGRAMS FOR DOWN COUNTER 
-![d5](https://user-images.githubusercontent.com/93427345/202352202-2cf23c66-41fa-4545-948d-0a4717a40de6.png)
+![d5](./d5.png)
 
 ### TRUTH TABLE FOR DOWN COUNTER
-![d6](https://user-images.githubusercontent.com/93427345/202352220-75ae4a2d-b549-44bc-b5cd-68c6850df32a.png)
+![d6](./d6.png)
 
 ### RESULTS 
 Thus the 4 bit up and down counters are implemented and its functionality is validated successfully.
