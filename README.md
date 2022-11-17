@@ -64,51 +64,49 @@ Program for flipflops  and verify its truth table in quartus using Verilog progr
 Developed by: Dharshini DS
 RegisterNumber: 212221230022
 ```
-### COUNTER DOWN:
+## Up-counter:
 ```
-module ex(input clk,input reset,output[0:3]counter);
-reg[0:3] counter_down;
-always@(posedge clk or posedge reset)
+module up_c(clock,reset,upcounter);
+input clock,reset;
+output reg[2:0] upcounter;
+always@(posedge clock or posedge reset)
 begin
 if(reset)
-counter_down<=4'd0;
+upcounter=3'b 000;
 else
-counter_down<=counter_down-4'd1;
-end
-assign counter=counter_down;
-endmodule
+upcounter=upcounter+1;
+end endmodule
 ```
-### COUNTER UP:
+## Down-counter:
 ```
-module ex(input clk,input reset,output[0:3]counter);
-reg[0:3] counter_up;
-always@(posedge clk or posedge reset)
+module do_wn(clock,reset,downcounter);
+input clock,reset;
+output reg[3:0] downcounter;
+always@(posedge clock or posedge reset)
 begin
 if(reset)
-counter_up<=4'd0;
+downcounter=4'b 000;
 else
-counter_up<=counter_up+4'd1;
-end
-assign counter=counter_up;
-endmodule
+downcounter=downcounter+1;
+end endmodule
 ```
 ### RTL LOGIC UP COUNTER:  
-![de1](https://user-images.githubusercontent.com/93427345/201353752-0f056437-fa39-4d25-808e-0c8f2c202776.png)
+![d1](https://user-images.githubusercontent.com/93427345/202351923-6197eaef-93ef-418d-82ae-77979ed78fd8.png)
 
 ### TIMING DIGRAMS FOR UP COUNTER  
-![de2](https://user-images.githubusercontent.com/93427345/201353797-8eb745de-025c-4c70-aa6c-52d374912bc3.png)
+![d2](https://user-images.githubusercontent.com/93427345/202351933-5b8cb640-366e-40d5-9c81-27ebe6f2a41c.png)
 
 ### TRUTH TABLE FOR UP COUNTER
-![de3](https://user-images.githubusercontent.com/93427345/201353822-8e0575be-470a-4f97-8fd0-1bffe5287507.jpg)
+![d3](https://user-images.githubusercontent.com/93427345/202352072-c86614a2-a782-46de-ad57-df4646d8564b.png)
 
 ### RTL LOGIC DOWN COUNTER
-![de4](https://user-images.githubusercontent.com/93427345/201354225-1e814639-3bbd-4268-8e91-86837d19c1a7.png)
+![d4](https://user-images.githubusercontent.com/93427345/202352183-9c15daf3-c881-4dcc-baf5-a0e0ea18880a.png)
 
 ### TIMING DIGRAMS FOR DOWN COUNTER 
-![de5](https://user-images.githubusercontent.com/93427345/201354355-b5d851ef-8f8b-4ed0-ae29-d443bc2635c4.png)
+![d5](https://user-images.githubusercontent.com/93427345/202352202-2cf23c66-41fa-4545-948d-0a4717a40de6.png)
 
 ### TRUTH TABLE FOR DOWN COUNTER
-![de6](https://user-images.githubusercontent.com/93427345/201354376-321f2546-17b6-4ad2-b458-520314a1266f.jpg)
+![d6](https://user-images.githubusercontent.com/93427345/202352220-75ae4a2d-b549-44bc-b5cd-68c6850df32a.png)
 
 ### RESULTS 
 Thus the 4 bit up and down counters are implemented and its functionality is validated successfully.
